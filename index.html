@@ -1,27 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-  	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<title>Under construction</title>
+  	<link href="https://fonts.googleapis.com/css?family=Mukta:200|Oswald:400,500|Tangerine:700" rel="stylesheet">
+	<title>Psiquelabs</title>
 </head>
 <body>
 	<style>
-	*{margin: 0;padding: 0;}
-	html,body{height: 100%;background-color: #333;}
-
-	div{
-		text-shadow: 3px 3px 0px rgba(0, 0, 0, 1);
-		font-family: 'Montserrat', sans-serif;
-	  	text-transform: uppercase;
-	  	letter-spacing: 10px;
-	  	position: absolute;
-	  	text-align: center;
-	  	font-size: 3em;
-	  	bottom: 50%;
-	  	width: 100%;
-	  	color: #fff;
-	}
+	*{margin:0;padding:0;}
+	html,body{height:100%;}
+	.header{width:100%; height:100%;background-color:#000;position:relative;
+	background:url(https://craigpay.files.wordpress.com/2011/04/img_2476.jpg) no-repeat center center fixed; 
+	-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;
+	background-size:cover;box-sizing:border-box;padding:40px 50px;}
+	.header span{font-size:1.4em;text-transform:uppercase;color:rgba(255,255,255,0.4);
+	font-family:'Mukta',sans-serif;}
+	.menu{float:right;}
+	.menu:hover{cursor:default;}
+	.menu a{text-decoration:none;color:rgba(255,255,255,0.6);transition 0.3s;}
+	.menu a:hover{color:rgba(255,255,255,0.9);transition 0.3s;}
+	.menu li{display:inline-block;text-transform:uppercase;font-family:'Mukta',sans-serif;}
+	.menu li:after{margin:0 10px;content:"/";color:rgba(255,255,255,0.4);}
+	.menu li:last-child:after{content:"";}
+	.header h1{font-family:'Oswald',sans-serif;text-transform:uppercase;font-size:4.2em;
+	line-height:70px;letter-spacing:5px;width:50px;color:rgba(255,255,255,0.6);position:absolute;
+	margin:auto;top:25%;}
+	.ab{text-decoration:none;}
+	#about{width:100%;height:300px;background-color:rgba(0,0,0,0.95);font-family:'Tangerine',cursive;
+	text-align:center;color:#fff;font-size:1.6em;display:table;}
+	#about h1{display:table-cell;vertical-align:middle;color:rgba(255,255,255,0.4);letter-spacing:1px;}
+	#contact{width:100%;height:200px;background-color:#000;position:relative;}
+	#contact h2{color:#666;font-family:'Mukta',sans-serif;padding:80px 0 0 50px;}
+	#contact img{width:260px;position:absolute;top:0;right:40px;}
 	</style>
-	<div>Under construction</div>
+	
+	<div class="header">
+		<span>psiquelabs</span>
+			<div class="menu">
+				<ul>
+					<li><a href="#about" alt="Know more">about us</a></li>
+					<li><a href="https://github.com/PsiqueLabs" target="_blank" alt="Our ideas">projects</a></li>
+					<li><a href="#contact" alt="Get in touch">contact</a></li>
+				</ul>
+			</div>
+		<h1>pulling out empty ideas</h1>
+	</div>
+
+	<a class="ab" href="https://github.com/PsiqueLabs/" target="_blank" alt="Know more">
+    	<div id="about">
+    		<h1>We don't know either. Let's find out together?</h1>
+  		</div>
+	</a>
+
+	<div id="contact">
+		<img src="http://i0.kym-cdn.com/photos/images/list/000/504/333/afe.gif">
+		<h2>Just send us an e-mail: psiquelabs at protonmail dot com</h2>
+	</div>
 </body>
 </html>
